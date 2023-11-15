@@ -5,16 +5,17 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.1.5</version>
+		<version>2.7.13</version> <!-- 3.1.5 -->
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
 	<artifactId>ShortStay</artifactId>
+	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>ShortStay</name>
 	<description>ShortStay</description>
 	<properties>
-		<java.version>17</java.version>
+		<java.version>11</java.version> <!-- 17 -->
 	</properties>
 	<dependencies>
 		<dependency>
@@ -31,6 +32,12 @@
 		<dependency>
   			<groupId>org.springframework.boot</groupId>
   			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
+		
+		<dependency>
+  			<groupId>org.springframework.boot</groupId>
+  			<artifactId>spring-boot-starter-tomcat</artifactId>
+  			<scope>provided</scope>
 		</dependency>
 		
 	</dependencies>
